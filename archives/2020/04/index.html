@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>花拳秀腿的博客</title>
+  <title>Archives: 2020/4 | 花拳秀腿的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="没啥好说的">
 <meta property="og:type" content="website">
 <meta property="og:title" content="花拳秀腿的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2020/04/index.html">
 <meta property="og:site_name" content="花拳秀腿的博客">
 <meta property="og:description" content="没啥好说的">
 <meta property="og:locale" content="en_US">
@@ -158,54 +158,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-C语言数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/" class="archive-article-date">
+  	<time datetime="2020-04-09T11:53:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/">C语言数组</a>
+      <a class="archive-article-title" href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/">C语言数组</a>
     </h1>
   
 
-        
-        <a href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-04-09T11:53:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>语法:数据类型 数组名[元素个数]={值123};</p>
-<pre><code>`int arr[]={1,2,3}` </code></pre><hr>
-<p><strong><em>获取数组长度:</em></strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"数组总内存空间：%d\n"</span>,<span class="keyword">sizeof</span>(arr)); </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"数组单个元素内存空间：%d\n"</span>,<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])); </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"数组长度(可容纳元素个数)：%d\n"</span>,<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>]));</span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong><em>逆序输出:</em></strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">6</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>;					</span><br><span class="line">	<span class="keyword">int</span> j=<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])<span class="number">-1</span>;		<span class="comment">//尾元素</span></span><br><span class="line">	<span class="keyword">while</span>(i&lt;j)&#123;</span><br><span class="line">		<span class="keyword">int</span> t;</span><br><span class="line">		t=arr[i];</span><br><span class="line">		arr[i]=arr[j];</span><br><span class="line">		arr[j]=t;</span><br><span class="line">		i++;</span><br><span class="line">		j++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//遍历</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])<span class="number">-1</span>;i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,arr[i]);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong><em>选择排序(每次选出一个最小的往前移)</em></strong><br>树型对比,一对多</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">6</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])<span class="number">-1</span>;i++);&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);j++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(arr[i]&gt;arr[j])&#123;</span><br><span class="line">			<span class="keyword">int</span> t;</span><br><span class="line">			t=arr[i];</span><br><span class="line">			arr[i]=arr[j];</span><br><span class="line">			arr[j]=t;</span><br><span class="line">			&#125;	</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//遍历</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong><em>冒泡排序(相邻的两两相比,每次选出大的一个往后移动)</em></strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">6</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])<span class="number">-1</span>;i++);&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])<span class="number">-1</span>;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">				<span class="keyword">int</span> t;</span><br><span class="line">				t=arr[j];</span><br><span class="line">				arr[j]=arr[j+<span class="number">1</span>];</span><br><span class="line">				arr[j+<span class="number">1</span>]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//遍历</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p> <strong><em>字符串数组</em></strong><br> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> arr[<span class="number">6</span>]=<span class="string">"hello"</span>;		<span class="comment">//字符串结束符为\0,数字0等于\0,但不等于'0';</span></span><br><span class="line"> <span class="keyword">char</span> arr[]=&#123;<span class="string">'h'</span>,<span class="string">'e'</span>,<span class="string">'l'</span>,<span class="string">'l'</span>,<span class="string">'o'</span>&#125;;</span><br><span class="line"> <span class="keyword">char</span> *arr=<span class="string">"hello"</span>;</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p><strong><em>二维数组遍历(双层循环)</em></strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);i++)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="keyword">sizeof</span>(arr[<span class="number">0</span>])/<span class="keyword">sizeof</span>(arr[<span class="number">0</span>][<span class="number">0</span>]);j++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d"</span>,arr[i][j]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -217,133 +197,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-03-31T08:30:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="《红楼梦》阅读笔记"><a href="#《红楼梦》阅读笔记" class="headerlink" title="《红楼梦》阅读笔记"></a>《红楼梦》阅读笔记</h2><h4 id="主题的丰富性"><a href="#主题的丰富性" class="headerlink" title="主题的丰富性"></a>主题的丰富性</h4><p>鲁迅评:</p>
-<p>经学家看见&lt;易&gt;,道学家看见淫,才子看见缠绵,革命家看见排满,流言家看见宫闱秘辛.</p>
-<p>不同的人从中看到不同的东西,得出不同的结论.</p>
-<p><strong>主题有两条线</strong></p>
-<p>1,宝黛爱情悲剧</p>
-<p>2,家政(政治)</p>
-<p>毛泽东评: 1.阶级斗争的小说</p>
-<p>​                 2.四大家族兴衰的小说</p>
-<p>​        </p>
-<p>曹雪芹写红楼梦,将当时的繁华,场面淋漓尽致的表现, 有种怀念,也有批判.</p>
-<hr>
-<h4 id="人物的丰富性"><a href="#人物的丰富性" class="headerlink" title="人物的丰富性"></a>人物的丰富性</h4><p>各个人物都很复杂,立体,</p>
-<p>贾宝玉 前身是一块多余的石头,无才补天,这使他听到功名利禄时有种被病态的迫害的</p>
-<p>感觉.</p>
-<hr>
-<h4 id="情节的丰富性"><a href="#情节的丰富性" class="headerlink" title="情节的丰富性"></a>情节的丰富性</h4><p>中国哲学:盛极必衰 兴久必亡 月盈则亏 水满则溢</p>
-<p>红楼梦与金瓶梅相比有种美学理想上的丰富和深刻</p>
-<p><strong>创作方法的丰富性</strong>:魔幻现实主义</p>
-<hr>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">红楼梦</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -365,9 +231,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
