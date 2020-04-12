@@ -11,20 +11,20 @@
   <meta name="description" content="一.指针总结:   指针类型变量：里面存放的是地址 指针型变量存放的是地址：取值通过( * )运算符&#x2F;&#x2F;值得注意的是(*)取的值是指针变量所指向的变量的值 通过 * p &#x3D;赋值,会改变原来变量的值。 形式参数和实际参数的概念 指针变量的赋值,必须是相同类型的    指针作为参数  123456789101112131415161718192021int main()&amp;#123;	void swap">
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#39;C语言指针&#39;">
-<meta property="og:url" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/index.html">
 <meta property="og:site_name" content="花拳秀腿的博客">
 <meta property="og:description" content="一.指针总结:   指针类型变量：里面存放的是地址 指针型变量存放的是地址：取值通过( * )运算符&#x2F;&#x2F;值得注意的是(*)取的值是指针变量所指向的变量的值 通过 * p &#x3D;赋值,会改变原来变量的值。 形式参数和实际参数的概念 指针变量的赋值,必须是相同类型的    指针作为参数  123456789101112131415161718192021int main()&amp;#123;	void swap">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%872.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%873.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%874.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%872.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%873.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%874.png">
 <meta property="article:published_time" content="2020-04-11T13:33:31.000Z">
 <meta property="article:modified_time" content="2020-04-12T15:02:08.017Z">
 <meta property="article:author" content="Pottato">
 <meta property="article:tag" content="指针">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png">
   
     <link rel="alternative" href="/atom.xml" title="花拳秀腿的博客" type="application/atom+xml">
   
@@ -160,7 +160,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-C语言指针/C语言指针" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C语言指针" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -172,7 +172,7 @@
   
 
         
-        <a href="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="archive-article-date">
+        <a href="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="archive-article-date">
   	<time datetime="2020-04-11T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
 </a>
         
@@ -249,16 +249,16 @@
 <ul>
 <li><strong>指向函数的指针作为函数参数</strong></li>
 </ul>
-<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png" alt="图片1"></p>
-<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%872.png" alt="图片2"></p>
+<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%871.png" alt="图片1"></p>
+<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%872.png" alt="图片2"></p>
 <hr>
 <ul>
 <li><strong>返回指针值的函数</strong></li>
 </ul>
 <p><strong><em>\</em>函数：**</strong></p>
-<p> <img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%873.png" alt="图片3"></p>
+<p> <img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%873.png" alt="图片3"></p>
 <p><strong><em>\</em>调用：**</strong></p>
-<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%874.png" alt="图片4"></p>
+<p><img src="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C:%5CWindows%5CSystem32%5CBlog%5Csource_posts%5CC%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88%5C%E5%9B%BE%E7%89%874.png" alt="图片4"></p>
 
       
 
@@ -349,7 +349,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" alt="微信分享二维码">
     </div>
 </div>
 
