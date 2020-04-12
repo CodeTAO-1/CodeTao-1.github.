@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 花拳秀腿的博客</title>
+  <title>&#39;C语言指针&#39; | 花拳秀腿的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没啥好说的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="花拳秀腿的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="一.指针总结:   指针类型变量：里面存放的是地址 指针型变量存放的是地址：取值通过( * )运算符&#x2F;&#x2F;值得注意的是(*)取的值是指针变量所指向的变量的值 通过 * p &#x3D;赋值,会改变原来变量的值。 形式参数和实际参数的概念 指针变量的赋值,必须是相同类型的    指针作为参数  123456789101112131415161718192021int main()&amp;#123;	void swap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#39;C语言指针&#39;">
+<meta property="og:url" content="http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/index.html">
 <meta property="og:site_name" content="花拳秀腿的博客">
-<meta property="og:description" content="没啥好说的">
+<meta property="og:description" content="一.指针总结:   指针类型变量：里面存放的是地址 指针型变量存放的是地址：取值通过( * )运算符&#x2F;&#x2F;值得注意的是(*)取的值是指针变量所指向的变量的值 通过 * p &#x3D;赋值,会改变原来变量的值。 形式参数和实际参数的概念 指针变量的赋值,必须是相同类型的    指针作为参数  123456789101112131415161718192021int main()&amp;#123;	void swap">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/12608/AppData/Roaming/Typora/typora-user-images/image-20200412220801712.png">
+<meta property="og:image" content="c:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200412220944766.png">
+<meta property="og:image" content="file:///C:%5CUsers%5C12608%5CAppData%5CLocal%5CTemp%5Cksohtml11228%5Cwps1.jpg">
+<meta property="og:image" content="file:///C:%5CUsers%5C12608%5CAppData%5CLocal%5CTemp%5Cksohtml11228%5Cwps2.jpg">
+<meta property="article:published_time" content="2020-04-11T13:33:31.000Z">
+<meta property="article:modified_time" content="2020-04-12T14:17:58.883Z">
 <meta property="article:author" content="Pottato">
+<meta property="article:tag" content="指针">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/12608/AppData/Roaming/Typora/typora-user-images/image-20200412220801712.png">
   
     <link rel="alternative" href="/atom.xml" title="花拳秀腿的博客" type="application/atom+xml">
   
@@ -156,36 +164,135 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-C语言指针" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/">&#39;C语言指针&#39;</a>
+    <h1 class="article-title" itemprop="name">
+      &#39;C语言指针&#39;
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" class="archive-article-date">
+  	<time datetime="2020-04-11T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一.指针总结:</strong> </p>
+<ol>
+<li>指针类型变量：里面存放的是地址</li>
+<li>指针型变量存放的是地址：取值通过( * )运算符<br>//值得注意的是(*)取的值是指针变量所指向的变量的值</li>
+<li>通过 * p =赋值,会改变原来变量的值。</li>
+<li>形式参数和实际参数的概念</li>
+<li>指针变量的赋值,必须是相同类型的</li>
+</ol>
+<hr>
+<ul>
+<li><strong>指针作为参数</strong></li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *p1,<span class="keyword">int</span> *p2)</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">int</span> a=<span class="number">20</span>;<span class="keyword">int</span> b=<span class="number">30</span>;</span><br><span class="line">	<span class="keyword">int</span> *p1=&amp;a;<span class="keyword">int</span> *p2;</span><br><span class="line">	p2=&amp;b;</span><br><span class="line">	swap(p1,p2);</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"a=%d,b=%d"</span>,*p1,*p2);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"a=%d,b=%d"</span>,a,b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *p1,<span class="keyword">int</span> *p2)</span></span>&#123;</span><br><span class="line"><span class="comment">//只能通过交换指针 值</span></span><br><span class="line"><span class="comment">//无法通过交换指针地址,因为实参变量和形参变量之间的数据传递是单向的”值传递”方式</span></span><br><span class="line">	<span class="keyword">int</span> t;</span><br><span class="line">	t=*p1;</span><br><span class="line">	*p1=*p2;</span><br><span class="line">	*p2=t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<p><strong>二.指针引用数组</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[<span class="number">3</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> *p1;<span class="keyword">int</span> *p2;</span><br><span class="line"><span class="comment">//指向函数名,默认指向首地址;</span></span><br><span class="line">p1=arr;</span><br><span class="line">p2=&amp;arr[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
+
+<p>2.3 通过指针引用数组元素(比较难的)</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//写法一</span></span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">3</span>]=&#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>,i++)&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,*(arr+i));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//写法二</span></span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">3</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span> *p;</span><br><span class="line">	<span class="keyword">for</span>(p=arr;p&lt;(arr+<span class="number">3</span>);p++)&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,*p);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.4 将(<strong>指针</strong>)数组作为函数参数</p>
+<p><strong>逆序输出</strong></p>
+<ul>
+<li>普通数组</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>&#125;;</span><br><span class="line">	isnve(arr,<span class="number">7</span>)</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insve</span><span class="params">(<span class="keyword">int</span> arr[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">     <span class="keyword">int</span> t;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n/<span class="number">2</span>;i++)&#123;</span><br><span class="line">         t=arr[i];</span><br><span class="line">		 arr[<span class="number">0</span>]=arr[n<span class="number">-1</span>-i];</span><br><span class="line">		 arr[n<span class="number">-1</span>-i]=t;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><u>指针数组</u></li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span> *p=arr;</span><br><span class="line">	insave(p,<span class="number">4</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,*(p+i));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insave</span><span class="params">(<span class="keyword">int</span> *arr,<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t;</span><br><span class="line">	<span class="keyword">int</span> *j=arr+n<span class="number">-1</span>;<span class="comment">//尾元素地址</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> *i=arr;i&lt;arr+n/<span class="number">2</span>;i++,j--)&#123;</span><br><span class="line">		t=*i;</span><br><span class="line">		*i=*j;</span><br><span class="line">		*j=t;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<p><strong>三.指针引用字符串</strong></p>
+<p><code>char *name=&quot;i love you&quot;</code></p>
+<p>1.指针型变量，指向的是该变量的第一个字符。<br>2. %s能读出全部内容是因为%s会从第一个开始读，直到读到’\0’的结束符为止</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//将a复制给b;</span></span><br><span class="line">	<span class="keyword">char</span> a[<span class="number">20</span>]=<span class="string">"i love you"</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%c\n"</span>,*(a+<span class="number">3</span>));</span><br><span class="line">	<span class="keyword">char</span> b[<span class="number">20</span>];</span><br><span class="line">	<span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(*(a+i)!=<span class="string">'\0'</span>)&#123;</span><br><span class="line">        *(b+i)=*(a+i);</span><br><span class="line">        i++;</span><br><span class="line">	&#125;</span><br><span class="line">	*(b+i)=<span class="string">'\0'</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%s\n"</span>,b);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<ul>
+<li><p><strong>指向函数的指针</strong><br><code>int (*p)(int,int)</code>    类型名(*指针变量名)(函数参数列表)</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">求最大值</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">getmax</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>;</span><br><span class="line">	<span class="keyword">int</span> (*p)(<span class="keyword">int</span>,<span class="keyword">int</span>);</span><br><span class="line">	p=getmax; <span class="comment">//让指针变量指向函数</span></span><br><span class="line">	<span class="keyword">int</span> <span class="built_in">max</span>=(*p)(<span class="number">9</span>,<span class="number">8</span>);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,<span class="built_in">max</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getmax</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a&gt;b)&#123;</span><br><span class="line">		<span class="keyword">return</span> a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> b;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<hr>
+<ul>
+<li><strong>指向函数的指针作为函数参数</strong></li>
+</ul>
+<img src="C:\Users\12608\AppData\Roaming\Typora\typora-user-images\image-20200412220801712.png" alt="image-20200412220801712" style="zoom:80%;" />
+
+<p><img src="C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200412220944766.png" alt="image-20200412220944766"></p>
+<hr>
+<ul>
+<li><strong>返回指针值的函数</strong></li>
+</ul>
+<p><strong><em>\</em>函数：**</strong></p>
+<p><img src="file:///C:%5CUsers%5C12608%5CAppData%5CLocal%5CTemp%5Cksohtml11228%5Cwps1.jpg" alt="img"> </p>
+<p><strong><em>\</em>调用：**</strong></p>
+<p><img src="file:///C:%5CUsers%5C12608%5CAppData%5CLocal%5CTemp%5Cksohtml11228%5Cwps2.jpg" alt="img"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,95 +304,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/11/C%E8%AF%AD%E8%A8%80%E6%8C%87%E9%92%88/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-04-09T11:53:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C语言数组</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/09/C%E8%AF%AD%E8%A8%80%E6%95%B0%E7%BB%84/">C语言数组</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数组基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/31/%E7%BA%A2%E6%A5%BC%E6%A2%A6/" class="archive-article-date">
-  	<time datetime="2020-03-31T08:30:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/31/%E7%BA%A2%E6%A5%BC%E6%A2%A6/">红楼梦</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">红楼梦</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -308,8 +426,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
