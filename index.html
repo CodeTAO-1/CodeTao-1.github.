@@ -154,6 +154,113 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo博客搭建指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">hexo博客搭建指南</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/" class="archive-article-date">
+  	<time datetime="2020-04-17T13:21:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令:"></a>基本命令:</h2><hr>
+<p>查看版本: hexo -v        npm -v</p>
+<p>查看路径: pwd 在 win里对应chdir</p>
+<p>建立博客文件:mkdir blog</p>
+<p>进入博客文件:cd blog/                                         //退回去:cd..</p>
+<p>使用hexo初始化博客: sudo hexo init                    //sudo在iOS表示使用管理员的命令            //win里直接hexo init</p>
+<p>查看目录 刚刚生成了的东西位置:dir            //iOS:ls -l</p>
+<p>启动博客(本地预览):hexo s</p>
+<p>新建文章:hexo n</p>
+<p>生成文件:hexo g</p>
+<p>清理:hexo clean</p>
+<hr>
+<h2 id="以下操作基于window"><a href="#以下操作基于window" class="headerlink" title="以下操作基于window"></a>以下操作基于window</h2><h4 id="1-下载安装node-js"><a href="#1-下载安装node-js" class="headerlink" title="1.下载安装node.js"></a>1.下载安装node.js</h4><h4 id="2-下载安装git-并不知道为啥"><a href="#2-下载安装git-并不知道为啥" class="headerlink" title="2.下载安装git,                                     (并不知道为啥)"></a>2.下载安装git,                                     (并不知道为啥)</h4><pre><code>配置git :1.查看git用户配置:git config user.name</code></pre><p>​                      2.查看git邮箱配置:git config user.name </p>
+<p>​                      3.配置git用户:git config –global user.name”your name”</p>
+<p>​                      4.配置git邮箱:git config –global user.email”your email”</p>
+<img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/Users\12608\AppData\Roaming\Typora\typora-user-images\image-20200331214250080.png" alt="image-20200331214250080" style="zoom: 50%;">
+
+
+
+<h4 id="3-以管理员身份运行cmd-win-Q搜索cmd"><a href="#3-以管理员身份运行cmd-win-Q搜索cmd" class="headerlink" title="3.以管理员身份运行cmd            (win+Q搜索cmd)"></a>3.以管理员身份运行cmd            (win+Q搜索cmd)</h4><h4 id="4-开始骚操作"><a href="#4-开始骚操作" class="headerlink" title="4.开始骚操作:"></a>4.开始骚操作:</h4><p>​         (1)可查看版本:hexo -v   ;   npm -v</p>
+<p>​         (2)使用淘宝镜像(下载速度快):npm  install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a>     </p>
+<p>​         (3)用cmpn安装hexo:cnpm install -g hexo-cli        (全局安装)</p>
+<p>​          (4)建立博客文件:mkdir blog</p>
+<p>​           (5)进入博客文件:cd blog/            (对应的推出当前文件:cd../..)</p>
+<p>​            (6)使用hexo初始化博客(框架):hexo init</p>
+<p>​             (7)启动博客(本地预览):hexo s</p>
+<p><img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401000305021.png" alt="image-20200401000305021"></p>
+<p>​             (8)新建文章:hexo n “your blog article name”</p>
+<p><img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401000122699.png" alt="image-20200401000122699"></p>
+<p>​             (9)编辑文章:进入文章所在目录</p>
+<p><img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401000548862.png" alt="image-20200401000548862"></p>
+<p>​                 编辑: notepad 我的第一篇博客文章.md        可用其他编辑器</p>
+<p>​                         (10)保存退出:Esc+w+q</p>
+<p>​                         (11)生成:hexo generate</p>
+<p>####　5.新的骚操作(部署到远端): </p>
+<p>​        (1)建立github账号</p>
+<p>​        (2)新建仓库:符合特定格式<img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401001626864.png" alt="image-20200401001626864"></p>
+<p>​        (3)安装插件:npm install hexo-deployer-git –save</p>
+<p>​        (4)设置重要文件(_config.yml):1. 编辑notepad _config.yml</p>
+<p>​                                                                                                     2. 添加如下:</p>
+<p><img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401002325678.png" alt="image-20200401002325678"></p>
+<p>repo来源:</p>
+<p><img src="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/C:%5CUsers%5C12608%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200401002513504.png" alt="image-20200401002513504"></p>
+<p>​        (5)部署远端:hexo deployer</p>
+<p>​        (6)登录网站:刚放的仓库名</p>
+<h4 id="6-终极骚操作-换主题-自个上网搜"><a href="#6-终极骚操作-换主题-自个上网搜" class="headerlink" title="6.终极骚操作(换主题):自个上网搜"></a>6.终极骚操作(换主题):自个上网搜</h4>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/17/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-中国诗歌" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -667,15 +774,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">指针</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数组基础</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">诗歌</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">指针</a>
               </li>
              
               <li class="article-tag-list-item">
